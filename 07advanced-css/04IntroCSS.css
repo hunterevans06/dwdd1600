@@ -1,0 +1,274 @@
+/*prevent problems with different browsers*/
+*{box-sizing: border-box;}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/*header Stuff here*/
+header {
+    background-color: #FBEEC1;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 1vw;
+}
+header h1{
+    margin: 0;
+    color: black;
+
+}
+header p{
+    margin: 0;
+    color: black;
+    letter-spacing: .5px;
+
+}
+
+/*Navagation Stuff Here*/
+
+/*Small Screens*/
+    @media only screen and (max-width: 600px) {
+        nav ul {
+            margin: 0;
+            padding: 0 2%;
+            list-style-type: none;
+        }
+        nav a {
+            display: block;
+            padding: .8rem;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            border-bottom: solid 1px;
+            color: #659dbd;
+        }
+        nav .active a {
+            background-color: #659dbd;
+            background-image: linear-gradient(to bottom, #659dbd, #5887a2);
+            color: #FBEEC1;
+        }
+
+    } /*end of media query*/
+
+
+
+    /*Big Screens*/
+    @media only screen and (min-width: 601px) {
+        nav {
+            background-color: #FBEEC1;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0 2vw;
+            margin: 0;
+            display: flex;
+        }
+        nav a {
+            font-size: 1.1rem;
+            text-decoration: none;
+            color: #659dbd;
+            font-weight: 700;
+            display: block;
+            padding: .83rem 2rem;
+        }
+        nav li.active a {
+            background-color: #659dbd;
+            background-image: linear-gradient(to bottom, #659dbd, #5887a2);
+            color: #FBEEC1;
+        }
+        nav a:hover {
+            color: white;
+        }
+
+    } /*end of media query*/
+
+
+
+
+
+
+
+
+
+
+/*stuff for the main*/
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #659dbd;
+}
+main h2 {
+    color: #659dbd;
+    margin-bottom: .2rem;
+}
+main p {
+    color: #2f3133;
+    margin-bottom: .2rem;
+}
+main ol {
+    list-style: none;
+    padding: .5rem 3vw;
+    background-color: #efefef;
+}
+
+main dl dt {
+    color: #659dbd;
+    font-weight: 700;
+}
+main dl dt {
+    color: #659dbd;
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type: circle;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address {
+     font-style: normal;
+     background-color: #FBEEC1;
+     padding: .5rem;
+     width: 12.5rem;
+     border: 1px solid #659dbd;
+     border-radius: .5rem;
+}
+
+main a:hover {
+    color: rgb(239,0,24);
+}
+
+main h3{
+    color: #659dbd;
+}
+
+/*Image Stuff Here*/
+
+.RTYDhero {
+    width: 100%;
+    margin: 0;
+}
+.RTYDhero img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #659dbd;
+}
+
+figure.photo {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+figure.photo img {
+    width: 100%;
+    height: auto;
+}
+.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+/*Form Stuff Here*/
+
+.myApplication fieldset {
+    border: 1px solid #659dbd;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myApplication legend {
+    color: #659dbd;
+    font-size: .8rem;
+}
+.myApplication label {
+    margin: .5rem;
+}
+.myApplication label, .myApplication select, .myApplication [type=text], .myApplication [type=tel], 
+.myApplication textarea {
+    display: block;
+}
+
+.myApplication [type=text], .myApplication [type=tel], .myApplication select, .myApplication textarea 
+{
+    border: solid 1px #808080;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: 200;
+}
+.myApplication textarea {
+    height: 6rem;
+}
+
+.myApplication :required {
+    background-color: rgba(54, 69, 79, 0.1);
+}
+
+.myApplication [type=submit] {
+    background-color: #659dbd;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+
+/*Footer Stuff here*/
+footer {
+    background-color: #FBEEC1;
+    text-align: center;
+    color: black;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+footer a {
+    color: black;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
