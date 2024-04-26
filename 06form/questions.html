@@ -10,13 +10,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
 
     </head>
     <body>
         <!--start of the page header-->
         <header>
-            <h1>GMI Cycling</h1>
-            <p>Get to know the Team, our success, and our tools.</p>
+            <img src="images/logo.png" alt="site logo" width="100" height="57">
+            <div>
+                <h1>GMI Cycling</h1>
+                <p>Get to know the Team and our success.</p>
+            </div>
         </header>
         <!--start of the nav-->
         <nav>
@@ -25,6 +29,7 @@
                 <li><a href="history.html">History</a></li>
                 <li><a href="images.html">Gallery</a></li>
                 <li class="active"><a href="questions.html">Join the Team</a></li>
+                <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
             </ul>
         </nav>
         <!--start of the main-->
@@ -48,7 +53,7 @@
                     <legend>Racer Information</legend>
                         <label>First Name*<input type="text" name="fname" required></label>
                         <label>Last Name*<input type="text" name="lname" required></label>
-                        <label>Email*<input type="text" name="email" required></label> 
+                        <label>Email*<input type="email" name="email" required></label> 
                         <label>Phone Number*<input type="tel" name="phone" required></label> 
                 </fieldset>
         
@@ -59,6 +64,15 @@
                         <label><input type="radio" name="method" value="sprinter" required>Sprinter</label>
                         <label><input type="radio" name="method" value="distance" required >Long Distance</label>
                         <label><input type="radio" name="method" value="support" required>Support Group</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Bike Brand</legend>
+                        <label>Select One or More if Applicable</label>
+                        <label><input type="checkbox" name="method" value="climber">Specialized</label>
+                        <label><input type="checkbox" name="method" value="sprinter">Canyon</label>
+                        <label><input type="checkbox" name="method" value="distance">Trek</label>
+                        <label><input type="checkbox" name="method" value="support">Other<textarea name="Other"></textarea></label>
                 </fieldset>
     
             
