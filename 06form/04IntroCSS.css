@@ -1,3 +1,7 @@
+/*prevent problems with different browsers*/
+*{box-sizing: border-box;}
+
+
 body {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
@@ -7,46 +11,93 @@ body {
 
 /*header Stuff here*/
 header {
-    background-color: #eaeaea;
+    background-color: #FBEEC1;
     padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 1vw;
 }
 header h1{
     margin: 0;
-    color: #8D8741;
+    color: black;
 
 }
 header p{
     margin: 0;
-    color: #8D8741;
+    color: black;
     letter-spacing: .5px;
 
 }
 
-/*nav stuff goes here*/
-nav {
-    background-color: #FBEEC1;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0 2vw;
-    margin: 0;
-    display: flex;
-}
-nav a {
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: #659dbd;
-    font-weight: 700;
-    display: block;
-    padding: .83rem 2rem;
-}
-nav li.active a {
-    background-color: #8D8741;
-    color: #FBEEC1;
-}
-nav a:hover {
-    color: white;
-}
+/*Navagation Stuff Here*/
+
+/*Small Screens*/
+    @media only screen and (max-width: 600px) {
+        nav ul {
+            margin: 0;
+            padding: 0 2%;
+            list-style-type: none;
+        }
+        nav a {
+            display: block;
+            padding: .8rem;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            border-bottom: solid 1px;
+            color: #659dbd;
+        }
+        nav .active a {
+            background-color: #659dbd;
+            background-image: linear-gradient(to bottom, #659dbd, #5887a2);
+            color: #FBEEC1;
+        }
+
+    } /*end of media query*/
+
+
+
+    /*Big Screens*/
+    @media only screen and (min-width: 601px) {
+        nav {
+            background-color: #FBEEC1;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0 2vw;
+            margin: 0;
+            display: flex;
+        }
+        nav a {
+            font-size: 1.1rem;
+            text-decoration: none;
+            color: #659dbd;
+            font-weight: 700;
+            display: block;
+            padding: .83rem 2rem;
+        }
+        nav li.active a {
+            background-color: #659dbd;
+            background-image: linear-gradient(to bottom, #659dbd, #5887a2);
+            color: #FBEEC1;
+        }
+        nav a:hover {
+            color: white;
+        }
+
+    } /*end of media query*/
+
+
+
+
+
+
+
+
+
 
 /*stuff for the main*/
 main {
@@ -106,6 +157,15 @@ main h3{
 
 /*Image Stuff Here*/
 
+.RTYDhero {
+    width: 100%;
+    margin: 0;
+}
+.RTYDhero img {
+    width: 100%;
+    height: auto;
+}
+
 figure.wrapped {
     width: 30%;
     margin: 0 0 0 2%;
@@ -145,6 +205,10 @@ figure.photo img {
     width: 100%;
     height: auto;
 }
+.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
 
 /*Form Stuff Here*/
 
@@ -160,12 +224,12 @@ figure.photo img {
 .myApplication label {
     margin: .5rem;
 }
-.myApplication label, .myApplication select, .myApplication [type=text], .myApplication [type=tel], 
+.myApplication label, .myApplication select, .myApplication [type=text], .myApplication [type=tel], .myApplication [type=email], 
 .myApplication textarea {
     display: block;
 }
 
-.myApplication [type=text], .myApplication [type=tel], .myApplication select, .myApplication textarea 
+.myApplication [type=text], .myApplication [type=tel], .myApplication [type=email], .myApplication select, .myApplication textarea 
 {
     border: solid 1px #808080;
     padding: .3rem;
@@ -194,12 +258,17 @@ figure.photo img {
 
 /*Footer Stuff here*/
 footer {
-    background-color: #eaeaea;
+    background-color: #FBEEC1;
     text-align: center;
-    color: #659dbd;
+    color: black;
     padding: 1rem 0;
     font-size: .8rem;
 }
 footer a {
-    color: #659dbd;
+    color: black;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
 }
