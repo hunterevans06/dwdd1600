@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="Learn about the GMI Cycling Team and our gear">
+        <meta name="author" content="Hunter Evans">
+        <title>GMI Cycling: Home</title>
+        <link rel="stylesheet" href="04IntroCSS.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+
+        <header id="header">
+            <link rel="stylesheet" href="04IntroCSS.css">
+            <img src="images/logo.png" alt="site logo" width="100" height="57">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="images.html">Gallery</a></li>
+                    <li class="active"><a href="gear.html">Gear</a></li>
+                    <li><a href="results.html">History</a></li>
+                    <li><a href="visit.html">Sponsor</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    </head>
+
+    <body>
+        <main>
+
+            <figure class="RTYDhero">
+                <img src="images/gear-one.jpg" alt="Ride Til You Die" width="1024" height="683">
+            </figure>
+            <h1>Place your order for your GMI gear here!</h1>
+
+    
+
+        
+        
+            <form method="get" class="myApplication" action="thanks.html">
+            
+                <fieldset>
+                    <legend>Racer Information</legend>
+                        <label>First Name*<input type="text" name="fname" required></label>
+                        <label>Last Name*<input type="text" name="lname" required></label>
+                        <label>Email*<input type="email" name="email" required></label> 
+                        <label>Phone Number*<input type="tel" name="phone" required></label> 
+                </fieldset>
+        
+            <div>
+                <div>
+                    <fieldset>
+                        <legend>GMI Kit</legend>
+                            <label>Please Select your Kit</label>
+                            <label><input type="checkbox" name="method" value="climber" required>Jersey</label>
+                            <label><input type="checkbox" name="method" value="sprinter" required>Bibs</label>
+                            <label><input type="checkbox" name="method" value="distance" required >Race Jacket</label>
+                            <label><input type="checkbox" name="method" value="support" required>Socks</label>
+                    </fieldset>
+                </div>
+            </div>
+
+                <fieldset>
+                    <legend>Appreal</legend>
+                        <label>Select One or More if Applicable</label>
+                        <label><input type="checkbox" name="method" value="climber">Hoodie</label>
+                        <label><input type="checkbox" name="method" value="sprinter">Hat</label>
+                        <label><input type="checkbox" name="method" value="distance">Sweats</label>
+                        <label><input type="checkbox" name="method" value="support">Cow Bell<textarea name="Other"></textarea></label>
+                </fieldset>
+    
+            
+    
+                        <label>Further Comments
+                            <textarea name="comments"></textarea>
+                        </label>
+    
+    
+    
+                <input type="submit" value="Submit My Order">
+            </form>
+            <body>
+                <main>
+                    
+                    <div class="heading">
+                        <h2>2024 Gear</h2>
+                    </div>
+                    
+                    <div class="gallery">
+                        <figure>
+                            <img src="images/jersey-2.png" alt="Cameron Riding" width="386" height="200" loading="lazy">
+                        </figure>
+            
+                        <figure>
+                            <img src="images/bibs.png" alt="Family Photo" width="386" height="200" loading="lazy">
+                        </figure>
+            
+                        <figure>
+                            <img src="images/socks.png" alt="Hunter Riding" width="386" height="200" loading="lazy">
+                        </figure>
+                        
+                        <figure>
+                            <img src="images/jacket.png" alt="Kirk Riding" width="386" height="200" loading="lazy">
+                        </figure>
+                        
+                        <figure>
+                            <img src="images/knee.png" alt="Race Starts" width="386" height="200" loading="lazy">
+                        </figure>
+                        
+                        <figure>
+                            <img src="images/sleeves.png" alt="Shaunee crosses the finish line" width="386" height="200" loading="lazy">
+                        </figure>
+                        
+                    </div>    
+                </main>
+            </body>
+        
+
+
+        </main>
+        <!--start of the footer-->
+        <footer>
+            <p>&copy; 2023 &bull; Hunter Evans &bull; <a href="mailto:10756174@uvu.edu">Email Us</a></p>
+        </footer>
+
+    </body>
+</html>

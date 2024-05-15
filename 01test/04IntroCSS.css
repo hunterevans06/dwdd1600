@@ -1,0 +1,394 @@
+/*prevent problems with different browsers*/
+*{box-sizing: border-box;}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/*header Stuff here*/
+header {
+    background-color: #b2d8d8;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 1vw;
+}
+header h1{
+    margin: 0;
+    color: black;
+
+}
+header p{
+    margin: 0;
+    color: black;
+    letter-spacing: .5px;
+
+}
+
+/*Navagation Stuff Here*/
+
+/*Small Screens*/
+    @media only screen and (max-width: 600px) {
+        nav ul {
+            margin: 0;
+            padding: 0 2%;
+            list-style-type: none;
+        }
+        nav a {
+            display: block;
+            padding: .8rem;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            border-bottom: solid 1px;
+            color: #b2d8d8;
+        }
+        nav .active a {
+            background-color: #b2d8d8;
+            background-image: linear-gradient(to bottom, #b2d8d8, #b2d8d8);
+            color: #2f3133;
+        }
+
+    } /*end of media query*/
+
+
+
+    /*Big Screens*/
+    @media only screen and (min-width: 601px) {
+        nav {
+            background-color: #b2d8d8;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0 2vw;
+            margin: 0;
+            display: flex;
+        }
+        nav a {
+            font-size: 1.1rem;
+            text-decoration: none;
+            color: #2f3133;
+            font-weight: 700;
+            display: block;
+            padding: .83rem 2rem;
+        }
+        nav li.active a {
+            background-color: #659dbd;
+            background-image: linear-gradient(to bottom, #2f3133, #2f3133);
+            color: #b2d8d8;
+        }
+        nav a:hover {
+            color: white;
+        }
+
+    } /*end of media query*/
+
+
+
+
+
+
+
+
+
+
+/*stuff for the main*/
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #b2d8d8;
+}
+main h2 {
+    color: #b2d8d8;
+    margin-bottom: .2rem;
+}
+main p {
+    color: #2f3133;
+    margin-bottom: .2rem;
+}
+main ol {
+    list-style: none;
+    padding: .5rem 3vw;
+    background-color: #efefef;
+}
+
+main dl dt {
+    color: #b2d8d8;
+    font-weight: 700;
+}
+main dl dt {
+    color: #b2d8d8;
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type: circle;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address {
+     font-style: normal;
+     background-color: #b2d8d8;
+     padding: .5rem;
+     width: 12.5rem;
+     border: 1px solid #b2d8d8;
+     border-radius: .5rem;
+}
+
+main a:hover {
+    color: rgb(239,0,24);
+}
+
+main h3{
+    color: #b2d8d8;
+}
+
+
+
+/*Image Stuff Here*/
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+	padding: 1em;
+	box-sizing: border-box;
+	color: white;
+	background: url(https://i.pinimg.com/564x/0c/12/68/0c126832c78cb95f4d1f9cb2c6ba1cf3.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.hero-title {
+    color: black;
+	max-width: 16em;
+	margin: 0;
+	font-size: 9vh;
+	font-weight: bold;
+	line-height: .9;
+}
+
+.hero1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+	padding: 1em;
+	box-sizing: border-box;
+	color: white;
+	background: url(https://i.pinimg.com/736x/b7/ef/fa/b7effa2dc7caee720ff4ce7ec23d180c.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.hero2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+	padding: 1em;
+	box-sizing: border-box;
+	color: white;
+	background: url(https://i.pinimg.com/736x/73/8f/a1/738fa1eda414085814334d5737e0aa86.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+
+
+
+
+
+.RTYDhero {
+    width: 100%;
+    margin: 0;
+}
+.RTYDhero img {
+    width: 100%;
+    height: auto;
+}
+
+
+figure.photo {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.photo img {
+    width: 100%;
+    height: auto;
+}
+
+figure.photo figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 1% 0 0;
+}
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #b2d8d8;
+}
+
+.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.heading h2 {
+    color: #2f3133;
+    text-align: center;
+}
+
+
+
+/*Form Stuff Here*/
+
+.myApplication fieldset {
+    border: 1px solid #b2d8d8;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myApplication legend {
+    color: #2f3133;
+    font-size: .8rem;
+}
+.myApplication label {
+    margin: .5rem;
+}
+.myApplication label, .myApplication select, .myApplication [type=text], .myApplication [type=tel], .myApplication [type=email], 
+.myApplication textarea {
+    display: block;
+}
+
+.myApplication [type=text], .myApplication [type=tel], .myApplication [type=email], .myApplication select, .myApplication textarea 
+{
+    border: solid 1px #808080;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: 200;
+}
+.myApplication textarea {
+    height: 6rem;
+}
+
+.myApplication :required {
+    background-color: rgba(54, 69, 79, 0.1);
+}
+
+.myApplication [type=submit] {
+    background-color: #b2d8d8;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: 2f3133;
+    margin: 1rem 0 0 1vw;
+}
+
+
+/* table stuff here */
+
+table.our-activities {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.our-activities th {
+    background-color: #b2d8d8;
+    color: #2f3133;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+table.our-activities td {
+    color: #2f3133;
+    padding: .4rem 2vw;
+}
+table.our-activities tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+table.our-activities tr:hover {
+    background-color: rgba(39, 144, 245, 0.2);
+}
+
+
+.box {
+    display: flex;
+    align-items: center;
+    background-color: #b2d8d8;
+}
+.riders {
+    padding: 5%;
+}
+.team {
+    float: left;
+}
+.team h2 {
+    color: black;
+    text-align: center;
+}
+.team p {
+    text-align: center;
+}
+.team ul {
+    text-align: center;
+}
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+.support {
+    padding: 5%;
+}
+.crew {
+    float: left;
+}
+.crew h2 {
+    color: black;
+    text-align: center;
+}
+.crew p {
+    text-align: center;
+}
+.crew ul {
+    text-align: center;
+}
+
+/*Footer Stuff here*/
+footer {
+    background-color: #b2d8d8;
+    text-align: center;
+    color: black;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+footer a {
+    color: black;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
